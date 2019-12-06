@@ -1,0 +1,61 @@
+#speakers{
+  width: 100%;
+  margin-bottom: 50px;
+  > div:nth-child(2) {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+    > div {
+      margin: 10px 10px;
+      width: 250px;
+      height: 250px;
+      //background-color: red;
+      //background-image: url("../images/content/personPlaceholder.png");
+      background-size: cover;
+      background-position: center;
+      object-fit: cover;
+      filter: grayscale(100%);
+      transition-duration: .2s;
+
+      position: relative;
+
+      &:hover{
+        filter: grayscale(0%);
+        transition-duration: .6s;
+        > div {
+          background: #0075C4 none;
+          opacity: .8;
+          transition-duration: .6s;
+        }
+      }
+      >div{
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6587009803921569) 76%, rgba(0,0,0,0) 100%);
+        transition-duration: .6s;
+        height: 90px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        color: #ffffff;
+
+        > p {
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          &:nth-child(1){
+            bottom: 50px;
+            width: 90%;
+          }
+          &:nth-child(2){
+            bottom: 0px;
+            width: 90%;
+          }
+        }
+      }
+
+
+    }
+  }
+}

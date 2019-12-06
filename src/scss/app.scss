@@ -1,0 +1,55 @@
+/* By Athlon Front-End Team */
+
+/* Core variables */
+@import 'base/vars';
+
+/* CSS Reset */
+@import 'base/reset';
+
+/* CSS print */
+@import 'base/print';
+
+/* Fonts */
+@import 'base/fonts';
+
+/* Mixins, helpers and functions */
+@import 'base/mixins';
+
+/* Vendor */
+
+/* Components */
+
+/* Browser specific styles */
+@import 'dirty/hacks';
+
+// required for about and LPNP sections
+@import "Common/veritcalCard";
+@import "Common/Heading";
+
+@import "loader";
+@import "carousel";
+@import "header";
+@import "about";
+@import "LPNP";
+@import "statistics";
+@import "speakers";
+@import "sponsors";
+@import "footer";
+
+@import "animation/FadeInUp";
+/* Demo styles */
+
+body {
+  background-color: #ffffff;
+  font-family: 'DINP-R', arial, serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+
+.logo {
+  margin: 0 auto;
+  display: block;
+}

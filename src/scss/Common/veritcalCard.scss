@@ -1,0 +1,57 @@
+.verticalCard{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+
+
+
+  > div {
+    width: 300px;
+    height: 400px;
+    margin: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+
+    //background-color: red;
+    transition-duration: 100ms;
+    &:hover{
+      transform: scale(1.1);
+      transition-duration: 100ms;
+    }
+  }
+
+
+  > div h3 {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    padding-bottom: 20px;
+    line-height: 1.5;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 80px;
+      height: 2px;
+      background: #6173f4;
+      left: 50%;
+      margin-left: -40px;
+      bottom: 17px;
+    }
+  }
+  > div p {
+    padding: 0 10px !important;
+    margin-top: 20px !important;
+    font-weight: 300 !important;
+    line-height: 1.5 !important;
+    font-size: 14px !important;
+    color: #fff !important;
+  }
+}

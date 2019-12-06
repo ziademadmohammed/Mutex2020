@@ -1,0 +1,193 @@
+#footer{
+
+  height: 250px;
+  width: 100%;
+  background-color: #dd4b39;
+  position: relative;
+  overflow: hidden;
+  >div {
+    &:nth-child(1){
+      text-align: left;
+      position: absolute;
+      top: 35%;
+      left: 200px;
+      transform: translate(-50%,-50%);
+      #logo{
+        width: 200px;
+        height: 100px;
+        background-color: #444444;
+        margin: 20px 20px;
+        border-radius: 10px;
+      }
+      p{
+        margin: 20px 20px;
+
+      }
+    }
+
+    // social links
+    &:nth-child(2){
+      position: absolute;
+      right: 0;
+      bottom:0;
+
+      > ul {
+        margin:0;
+        padding:0;
+        display:flex;
+
+        li {
+          margin: 10px 0;
+          list-style:none;
+
+          a{
+            display:block;
+            position:relative;
+            width:50px;
+            height:50px;
+            line-height:50px;
+            font-size:20px;
+            text-align:center;
+            text-decoration:none;
+            color:#404040;
+            margin: 0 15px;
+            transition:.5s;
+
+
+            svg {
+              width: 40px;
+              height : 40px;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+              fill: #404040;
+              transition-duration: .5s;
+            }
+
+
+
+            &:hover{
+              span{
+                &:nth-child(1){
+                  transform: scaleX(0);
+                  transform-origin: left;
+                  transition:transform .5s;
+                }
+                &:nth-child(2){
+                  transform: scale(1);
+                  transform-origin: top;
+                  transition:transform .5s;
+                }
+                &:nth-child(3){
+                  transform: scaleX(0);
+                  transform-origin: right;
+                  transition:transform .5s;
+                }
+                &:nth-child(4){
+                  transform: scale(1);
+                  transform-origin: bottom;
+                  transition:transform .5s;
+                }
+              }
+            }
+
+            span{
+              position:absolute;
+              transition: transform .5s;
+              // TOP
+              &:nth-child(1){
+                width:100%;
+                height:3px;
+                background:#404040;
+                top:0;
+                left:0;
+                transform-origin: right;
+              }
+              // LEFT
+              &:nth-child(2){
+                width:3px;
+                height:100%;
+                background:#404040;
+                top:0;
+                left:0;
+                transform:scale(0);
+                transform-origin: bottom;
+              }
+              // BOTTOM
+              &:nth-child(3){
+                width:100%;
+                height:3px;
+                background:#404040;
+                bottom:0;
+                left:0;
+                transform-origin: left;
+              }
+              //Right
+              &:nth-child(4){
+                width:3px;
+                height:100%;
+                background:#404040;
+                top:0;
+                right:0;
+                transform:scale(0);
+                transform-origin: top;
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.facebook:hover {
+  color: #3b5998 !important;
+  svg{
+    transition-duration: .5s;
+    fill: #3b5998 !important;
+  }
+}
+.facebook:hover span {
+  background: #3b5998 !important;
+}
+.twitter:hover {
+  color: #1da1f2 !important;
+  svg{
+    transition-duration: .5s;
+    fill: #1da1f2 !important;
+  }
+}
+.twitter:hover span {
+  background: #1da1f2 !important;
+}
+.instagram:hover {
+  color: #c32aa3 !important;
+  svg{
+    transition-duration: .5s;
+    fill: #c32aa3 !important;
+  }
+}
+.instagram:hover span {
+  background: #c32aa3 !important;
+}
+.google:hover {
+  color: #dd4b39 !important;
+  svg{
+    transition-duration: .5s;
+    fill: #dd4b39 !important;
+  }
+}
+.google:hover span {
+  background: #dd4b39 !important;
+}
+ul li a .twitter {
+  color: #1da1f2 !important;
+}
+ul li a:hover:nth-child(3) {
+  color: #c32aa3 !important;
+}
+ul li a:hover:nth-child(4) {
+  color: #dd4b39 !important;
+}

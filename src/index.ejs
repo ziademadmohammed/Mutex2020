@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+
+<!--    this is done so that i can place scripts where ever i want -->
+<!--    htmlWebpackPlugin i available through the webpack configuration -->
+<!--    this also made to be able to put multiple bundles into the app -->
+    <% if(htmlWebpackPlugin.files.chunks) { %>
+        <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.app.css[0] %>">
+    <% } %>
+
+
+</head>
+<body>
+<!--    <div class="loader-hide-elements-below">-->
+<!--        <div class="loader-container">-->
+<!--            <div class="cell">-->
+<!--                <div class="loader square reg">-->
+<!--                    <div class="block">-->
+<!--                        <div class="box"></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+    <header>
+        <nav>
+            <div id="brand">
+                <div id="header-logo" class="">
+                    <img src="images/content/MUTEX%20White.png" alt="">
+                </div>
+            </div>
+            <div id="menu">
+                <div id="menu-toggle">
+                    <div id="menu-icon">
+                        <div class="bar">section 1</div>
+                        <div class="bar">section 1</div>
+                        <div class="bar">section 1</div>
+                    </div>
+                </div>
+                <ul id="show-menu">
+                    <li><a href="#aboutSection">
+                        <div class="svg-wrapper">
+                            <svg height="30" width="80" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="shape" height="30" width="80" />
+                            </svg>
+                            <div class="text">ABOUT</div>
+                        </div>
+                    </a></li>
+                    <li><a href="#section01" >
+                        <div class="svg-wrapper">
+                            <svg height="30" width="80" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="shape" height="30" width="80" />
+                            </svg>
+                            <div class="text">HOVER</div>
+                        </div>
+                    </a></li>
+                    <li><a href="#section02">
+                        <div class="svg-wrapper">
+                            <svg height="30" width="80" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="shape" height="30" width="80" />
+                            </svg>
+                            <div class="text">HOVER</div>
+                        </div>
+                    </a></li>
+                    <li><a href="#section03">
+                        <div class="svg-wrapper">
+                            <svg height="30" width="80" xmlns="http://www.w3.org/2000/svg">
+                                <rect class="shape" height="30" width="80" />
+                            </svg>
+                            <div class="text">HOVER</div>
+                        </div>
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <div id="carousel-container">
+        <div class="customize" id="carousel">
+<!--            carousel items -->
+            <div class="carousel-item carousel-item2">
+
+                <p class="carousel-description">
+                    MUTEX 2017
+                </p>
+            </div>
+            <div data-src="" class="carousel-item carousel-item1">
+                <p class="carousel-description">
+                    MUTEX 2018
+                </p>
+            </div>
+            <div class="carousel-item carousel-item3">
+
+                <p class="carousel-description ">
+                    MUTEX 2019
+                </p>
+            </div>
+
+        </div>
+        <div class="customize-tools">
+<!--            carousel controls -->
+            <div class="dots customize-controls" id="customize-dots">
+
+                <div class="dot-control"></div>
+                <div class="dot-control"></div>
+                <div class="dot-control"></div>
+
+            </div>
+
+            <div class="playbutton-wrapper">
+                <button id="customize-toggle">Pause</button>
+            </div>
+        </div>
+    </div>
+
+
+<!--    this is added here for the selectors to be avaiable -->
+    <% if(htmlWebpackPlugin.files.chunks) { %>
+        <script src="<%= htmlWebpackPlugin.files.chunks.preload.entry %>"></script>
+    <% } %>
+
+    <section id="aboutSection">
+        <div class="underline-heading">
+            <h2 >About MUTEX</h2>
+            <p class="">MUTEX is the biggest scientific and technical annual event hosted by IEEE Zagazig Student Branch. The event mainly focuses on introducing the latest technologies in computer science fields to the audience and setting a clear path for them to follow.</p>
+        </div>
+        <div id="VMGContainer" class="verticalCard">
+            <div >
+                <h3>Vision</h3>
+                <p>Banishing the gap between the latest technology trends and the current community awareness.</p>
+            </div>
+            <div   >
+                <h3>Mission</h3>
+                <p>Establishing a link between the leading companies/organizations in latest technologies and the academic students through sets of talks, trainings and workshops.</p>
+            </div>
+            <div >
+                <h3>Goals</h3>
+                <p>Spreading technological awareness among college students. Giving students work experience in the latest technologies through workshops. Finding well performing students and give them the chance to be interns in the company.</p>
+            </div>
+
+            </div>
+    </section>
+
+    <section id="LPNPSection">
+        <div class="underline-heading ">
+            <h2 >What to Expect at MUTEX</h2>
+
+        </div>
+        <div id="LPNPContainer" class="verticalCard smallVerticalCard">
+
+            <div >
+                <h3>Learning</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            </div>
+            <div >
+                <h3>Practising</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            </div>
+            <div >
+                <h3>Networking</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            </div>
+            <div >
+                <h3>Pitching</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="STATISTICS">
+        <div class="underline-heading">
+            <h2 >STATISTICS</h2>
+
+        </div>
+        <div>
+            <div id="" class="">
+                <div>
+                    <img src="images/content/talks.jpg" alt="">
+                    <div class="vl"></div>
+                    <div class="two-level-text">
+                            <h3>450+</h3>
+                            <h3>Talks</h3>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/content/workshops2.png" alt="">
+                    <div class="vl"></div>
+                    <div class="two-level-text">
+                            <h3>450+</h3>
+                            <h3>Workshops</h3>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/content/tracks.png" alt="">
+                    <div class="vl"></div>
+                    <div class="two-level-text">
+                            <h3>450+</h3>
+                            <h3>Tracks</h3>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/content/users.png" alt="">
+                    <div class="vl"></div>
+                    <div class="two-level-text">
+                            <h3>450+</h3>
+                            <h3>Attendees</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="speakers">
+        <div class="underline-heading">
+            <h2 >Previous Speakers</h2>
+        </div>
+        <div>
+
+
+
+        </div>
+    </section>
+
+    <section id="sponsors">
+        <div class="underline-heading">
+            <h2>2019 SPONSORS</h2>
+            <div>
+                <div class="sponsor-category">
+                    <div>
+                        <img src="images/content/sponsors/19/Official%20Partner.png" alt="">
+                        <p>Official Partner</p>
+                    </div>
+                </div>
+                <div class="sponsor-category">
+                    <div>
+                        <img src="images/content/sponsors/19/Hosting%20Partner.png" alt="">
+                        <p>Hosting Partner</p>
+                    </div>
+                    <div>
+                        <img src="images/content/sponsors/19/Strategic%20Partner.png" alt="">
+                        <p>Strategic Partner</p>
+                    </div>
+                    <div>
+                        <img src="images/content/sponsors/19/Catering%20Sponsor.png" alt="">
+                        <p>Catering Sponsor</p>
+                    </div>
+                    <div>
+                        <img src="images/content/sponsors/19/Transportation%20Partner.png" alt="">
+                        <p>Transportation Partner</p>
+                    </div>
+                </div>
+                <div class="sponsor-category">
+                    <div>
+                         <img src="images/content/sponsors/19/Content%20Partner.png" alt="">
+                        <p>Content Partner</p>
+                    </div>
+                    <div>
+                        <img src="images/content/sponsors/19/Content%20Partner(2).png" alt="">
+                        <p>Content Partner</p>
+                    </div>
+                    <div>
+                        <img src="images/content/sponsors/19/Content%20Partner(1).png" alt="">
+                        <p>Content Partner</p>
+                    </div>
+                    <div>
+                        <img src="images/content/sponsors/19/Content%20Partner(3).png" alt="">
+                        <p>Content Partner</p>
+                    </div>
+                </div>
+                <div class="sponsor-category">
+                    <div>
+                        <img src="images/content/sponsors/19/Startup%20Partner.png" alt="">
+                        <p>Startup Partner</p>
+                    </div>
+                    <div>
+                        <img src="images/content/sponsors/19/Startup%20Partner(1).png" alt="">
+                        <p>Startup Partner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="underline-heading">
+            <h2>2018 SPONSORS</h2>
+            <div>
+                <div class="sponsor-category">
+                    <div>
+                        <img src="images/content/sponsors/19/Official%20Partner.png" alt="">
+                        <p>Official Partner</p>
+                    </div>
+                </div>
+                <div class="sponsor-category">
+                    <div>
+                        <img src="images/content/sponsors/18/Gold%20Sponsor.png" alt="">
+                        <p>Gold Sponsor</p>
+                    </div>
+                    <div>
+                        <img src="images/content/sponsors/18/Community%20Partner.png" alt="">
+                        <p>Community Partner</p>
+                    </div>
+                    <div>
+                        <img src="images/content/sponsors/18/Strategic%20Partner.png" alt="">
+                        <p>Strategic Partner</p>
+                    </div>
+                    <div>
+                        <img src="images/content/sponsors/18/Gold%20Sponsor(1).png" alt="">
+                        <p>Gold Sponsor</p>
+                    </div>
+                </div>
+                <div class="sponsor-category">
+                    <div>
+                        <img src="images/content/sponsors/18/Content%20Partner(2).png" alt="">
+                        <p>Content Partner</p>
+                    </div>
+                    <div>
+                        <img src="images/content/sponsors/18/Content%20Partner.png" alt="">
+                        <p>Content Partner</p>
+                    </div>
+                    <div>
+                        <img src="images/content/sponsors/18/Content%20Partner(3).png" alt="">
+                        <p>Content Partner</p>
+                    </div>
+                    <div>
+                        <img src="images/content/sponsors/18/Content%20Partner(1).png" alt="">
+                        <p>Content Partner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="underline-heading">
+            <h2>2017 SPONSORS</h2>
+            <div>
+                <div class="sponsor-category">
+                    <div>
+                        <img src="images/content/sponsors/17/Main%20Sponsor.png" alt="">
+                        <p>Main Sponsor</p>
+                    </div>
+                </div>
+                <div class="sponsor-category">
+                    <div>
+                        <img src="images/content/sponsors/17/Content%20Partner(2).png" alt="">
+                        <p>Content Partner</p>
+                    </div>
+                    <div>
+                        <img src="images/content/sponsors/17/Content%20Partner(3).png" alt="">
+                        <p>Content Partner</p>
+                    </div>
+                    <div>
+                        <img src="images/content/sponsors/17/Content%20Partner.png" alt="">
+                        <p>Content Partner</p>
+                    </div>
+                    <div>
+                        <img src="images/content/sponsors/17/Content%20Partner(1).png" alt="">
+                        <p>Content Partner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div>
+            <img src="images/content/MUTEX%20White.png" alt="" style="width: 170px;height: auto">
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a class="facebook" href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                         <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="twitter" href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="instagram" href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="google" href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"/></svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+
+<!--    this is done so that i can place scripts where ever i want -->
+<!--    htmlWebpackPlugin i available through the webpack configuration -->
+    <% if(htmlWebpackPlugin.files.chunks.app) { %>
+        <script src="<%= htmlWebpackPlugin.files.chunks.app.entry %>"></script>
+    <% } %>
+</body>
+</html>
